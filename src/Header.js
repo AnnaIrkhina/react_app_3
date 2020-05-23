@@ -7,7 +7,7 @@ function Header(props) {
     <div className="Header">
 
         <img src="./logo192.png" alt="logo" width="100" height="100"/>
-        {props.menu.map(el=><div className="TopMenuItem">{el}</div>)}
+        {props.menu.map(el=><div className="TopMenuItem"><a  href = "#">{el}</a></div>)}
 
 
     </div>

@@ -24,19 +24,19 @@ function ContentLeft() {
                 <ul>
                     <li>
                         <label className="srchType">
-                            <input type="checkbox" name="srchType" className="" value="T" checked />
+                            <input type="checkbox" name="srchType" className="" value="T"  />
                                 search titles only
                         </label>
                     </li>
                     <li>
                         <label className="hasPic">
-                            <input type="checkbox" name="hasPic" className="autosubmit" value="1" checked />
+                            <input type="checkbox" name="hasPic" className="autosubmit" value="1"  />
                                 has image
                         </label>
                     </li>
                     <li>
                         <label className="postedToday">
-                            <input type="checkbox" name="postedToday" className="autosubmit" value="1" checked />
+                            <input type="checkbox" name="postedToday" className="autosubmit" value="1"  />
                                 posted today
                         </label>
                     </li>
