@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './App.css';
 
-function ContentLeft() {
+function ContentLeft(){
+    const[counter, setCount] = useState(15);
+
+    const plusClicked = ()=>{
+        setCount(counter +1);
+    }
+    const minusClicked = () =>{
+        setCount(counter -1);
+    }
     return (
         <div className="ContentLeft">
-            <input type="hidden" name="userid" value=""/>
 
             <ul className="searchgroupButtongrouPurveyor">
                 <li className="button sel">
@@ -53,6 +60,9 @@ function ContentLeft() {
                         </label>
                     </li>
                 </ul>
+                <button onClick={plusClicked}>+</button>
+                <button onClick={minusClicked}> - </button>
+                <p>{counter}</p>
             </div>
         </div>
             );

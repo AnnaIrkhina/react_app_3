@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+. App img {
+    float: left;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -36,32 +40,86 @@
     transform: rotate(360deg);
   }
 }
-.Header{
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
-
-
-  font-size: 24px;
-  text-align: center;
-  vertical-align: bottom;
+.Header {
 
 }
-.TopMenuItem {
-font-size: 30px;
-  text-align: center;
-
-  padding: 10px;
-
-}
-.searchgroupButtongrouPurveyor{
-  display: grid;
-  grid-template-columns: auto auto auto;
+.Header ul{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.Header li{
+  float: left;
+}
+.Header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
 
+}
+
+.Header li a:hover {
+  background-color: #111;
+}
+
+.searchgroupButtongrouPurveyor{
+    list-style-type: none;
+
+}
+.searchgroupButtongrouPurveyor ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.searchgroupButtongrouPurveyor li{
+    float: left;
+
+}
+.searchgroupButtongrouPurveyor li a {
+    display: block;
+    color: indigo;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: white;
+
+}
+
+.searchgroupButtongrouPurveyor li a:hover {
+    background-color: indigo;
+    color: white;
+;
 }
 .searchgroup{
   text-align: left;
+  list-style-type: none;
+  background-color: aliceblue;
+    margin: 0;
+    padding: 0;
 
+}
+.searchgroup ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+}
+.searchgroup li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: bottom;
+    width: 100%;
 }
 
 .ContentBody{
